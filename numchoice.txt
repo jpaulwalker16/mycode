@@ -1,0 +1,4 @@
+num_choice = int(input("pick a number 1-10:"))
+
+print(num_choice + 1)
+

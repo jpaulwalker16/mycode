@@ -1,0 +1,16 @@
+#!/usr/bin/env python
+
+#create correct number
+random_num = 42
+guess = int(input('what is the answer to life'))
+
+if secret_num == guess:
+    print("you got it!")
+
+elif secret_num-5< guess <secret_num+5:
+    print("your very close!")
+
+else:
+    print("try again!")
+
+

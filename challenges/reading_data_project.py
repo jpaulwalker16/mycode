@@ -15,7 +15,7 @@ def main():
     first3lines = carscontents.readline().split(",")
         print("Enter in which contents you want listed or enter in any data you have about what car you are looking up; see the following choices")
     for x in first3lines:
-        print(x)
+        print(
         
     with open("cars.csv") as carscontents:
         for x in csv.DictReader(carscontents):

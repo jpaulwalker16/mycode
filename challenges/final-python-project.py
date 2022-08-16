@@ -27,6 +27,13 @@ def main():
             'Philadelphia':'1584064', 'Dallas':'2693976', 'Atlanta':'506811', 'New Orleans':'390144', 'Miami':'467963',
             'Boise':'228959'}
 
+    #two bedroom year on year change from August 2021 to August 2022
+    percent_change = pop_size = {'New York City':'8336817', 'Boston':'692600', 'San Francisco':'881549', 'Los Angeles':'3979576',
+            'Seattle':'753675', 'San Diego':'1423851', 'San Jose': '1021795', 'Providence':'179883', 'Washington DC':'705749',
+            'Denver':'-.0101', 'Chicago':'.0988', 'Portland':'.1737', 'Sacremento':'.0906', 'Nashville':'.0043',
+            'Philadelphia':'.136', 'Dallas':'.1683', 'Atlanta':'.1359', 'New Orleans':'-.069', 'Miami':'-.1797',
+            'Boise':'.0962'}
+
 if __name__ == "__main__":
     main()
 

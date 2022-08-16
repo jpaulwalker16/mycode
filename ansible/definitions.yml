@@ -1,0 +1,13 @@
+- name: demoing prompts
+  hosts: localhost
+  connection: local
+  gather_facts: no
+
+  vars:
+      user: Arthur King of the Britons
+
+  vars_prompt:
+      #write a LIST of variables you would like to define
+      - name: quest
+        prompt: what is your quest?
+

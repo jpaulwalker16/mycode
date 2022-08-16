@@ -15,17 +15,18 @@ def main():
 #split off the rest of the lines of data and separate them
         datacontent = carscontents.readlines()[1:]  # readlines converts a fileobj to a list, so the split is redundant
         #ask for input on data points
-        answer = input("Welcome to cars.com! Do you have any specific data point on your vehicle? (y/n)")
+        answer = input("Welcome to cars.com! Do you have any specific data point on your vehicle?   (y/n)")
+        print("\n")
         if answer.lower() == "y":
 
             #give the following choices for data points
-            print("Here are the following choices:")
-                for a,b,c in zip(datatitles[::3],datatitles[1::3],datatitles[2::3]):
-                    print('{:<30}{:<30}{:<}'.format(a,b,c))
+            print("Here are the following choices:\n")
+            for a,b,c in zip(datatitles[::3],datatitles[1::3],datatitles[2::3]):
+                print('{:<30}{:<30}{:<}'.format(a,b,c))
 
             #ask for input of a category
-              answer1 = input("Input a parameter to list all the vehicles with that information.\n")
-              with open("cars.csv","r") as carscontents1:
+                answer1 = input("Input a parameter to list all the vehicles with that information.\n")
+                with open("cars.csv","r") as carscontents1:
                   #for x in csv.DictReader(carscontents1):
 
                   #search each line for the answer1 content and print out the whole line
@@ -39,7 +40,7 @@ def main():
 
        #print the following categories of choices    
         else:
-            print("Here are the following choices:")
+            print("Here are the following choices:\n")
             for a,b,c in zip(datatitles[::3],datatitles[1::3],datatitles[2::3]):
                 print('{:<30}{:<30}{:<}'.format(a,b,c))
                     

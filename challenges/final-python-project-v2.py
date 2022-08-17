@@ -52,7 +52,7 @@ def main():
             income= int(income)
 
         else:
-            print(" Type a numerical value without commas, decimals, or any other
+            print("Invalid option! Type a numerical value without commas, decimals, or any other
                     symbols/punctuation marks.")  
             continue  # force the user to restart the while loop
 
@@ -61,15 +61,19 @@ def main():
             continue
         
         #get the value of rent between 1 - 10 to represent the importance of this parameter
-        rent = input("What is the highest value for rent you are willing to pay?\n")
-            if rent in range(1,10):
-                rent = int(rent)
-            else: 
-                print("Value entered is not valid. Enter a number between 1 and 10.\n")
+        rent_min = input("What is the minimum rent you will pay?\n")
+        rent_min = int(rent_min)
+        rent_max = input("What is the maximum rent you can pay?\n")
+        rent_max = int(rent_max)
+            if rent_min < 0 
+                 
+                print("Value entered is not valid. Enter a number between 0 and" +rent['New York City'] )
+                print("\n")
                 continue
 
         #get the value of population size between 1 - 10 to represent the importance of this parameter
-        population = input("Rate the importance of the size of the city between the value 1 and 10.\n")
+        population_min = input("What is the minimum size population for a city you are willing to live in?\n")
+        population
             if population in range(1,10):
                 population = int(population)
             else:
@@ -92,9 +96,7 @@ def main():
             else:
                 print("Value entered is not valid. Enter a number between 1 and 10.\n")
                 continue
-    
-        
-            
+
 if __name__ == "__main__":
     main()
 
